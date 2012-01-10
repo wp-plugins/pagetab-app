@@ -8,7 +8,7 @@ Requires at least: 3.0.0
 Tested up to: 3.2
 Stable tag: 1.00
 
-This plugin will help to create Facebook Fan Page tab without any installation required. You can use Wordpress as the Facebook tab page or use the built-in free HTML editor to create the Facebook Fan Page tab.
+This plugin will help to create Facebook Fan Page tab without any installation required.
 
 == Description ==
 
