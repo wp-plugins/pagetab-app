@@ -5,8 +5,8 @@ Plugin URI: http://www.pagetabapp.com
 Author: PageTabApp.com
 Tags: facebook fan page, wordpress, wordpress to facebook, wordpress to facebook fanpage, create facebook fan page, tab manager, facebook tab page
 Requires at least: 3.0.0
-Tested up to: 3.2
-Stable tag: 1.00
+Tested up to: 3.5
+Stable tag: 1.10
 
 This plugin will help to create Facebook Fan Page tab without any installation required.
 

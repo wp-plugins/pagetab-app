@@ -2,9 +2,9 @@
 /*
 Plugin Name: PageTabApp.com Wordpress Sync to Page Tab
 Plugin URI: http://www.pagetabapp.com
-Description: This plugin will help to create Facebook Fan Page tab without any installation required. You can use Wordpress as the Facebook tab page or use the built-in free HTML editor to create the Facebook Fan Page tab. Go to http://pagetabapp.com/
-Author: PageTabApp.com
-Version: 1.0
+Description: This plug-in will enable auto sync from Wordpress post to Page Tab.
+Author: Patric Chan
+Version: 1.10
 Author URI: http://www.PageTabApp.com
 */
 
@@ -111,7 +111,7 @@ if (!class_exists('cwp_pta')) {
         	//Check if this is fresh new published post, not edited one
         	if (true) {
         		$secret = get_post_meta($post_ID, 'pagetab_secret_key', true);
-        		$post = $wpdb->get_row( $wpdb->prepare( "SELECT * FROM $wpdb->posts WHERE ID = $post_ID" ) );
+        		$post = $wpdb->get_row( $wpdb->prepare( "SELECT * FROM $wpdb->posts WHERE ID = %d", $post_ID ) );
         		$content = explode(PHP_EOL . PHP_EOL, $post->post_content);
 	            $htmlcontent = '';
     	        foreach($content as $line){
@@ -142,7 +142,7 @@ if (!class_exists('cwp_pta')) {
         	//Check if this is fresh new published post, not edited one
         	if (true) {
         		$secret = get_post_meta($post_ID, 'pagetab_secret_key', true);
-        		$post = $wpdb->get_row( $wpdb->prepare( "SELECT * FROM $wpdb->posts WHERE ID = $post_ID" ) );
+        		$post = $wpdb->get_row( $wpdb->prepare( "SELECT * FROM $wpdb->posts WHERE ID = %d", $post_ID ) );
         		$content = explode(PHP_EOL . PHP_EOL, $post->post_content);
 	            $htmlcontent = '';
     	        foreach($content as $line){
